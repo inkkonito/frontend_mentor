@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  src: ("./src/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+@layer base {
+  p {
+    @apply text-[15px];
+  }
+}
