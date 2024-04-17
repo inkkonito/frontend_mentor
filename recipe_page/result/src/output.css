@@ -446,12 +446,45 @@ video {
   display: none;
 }
 
-body {
+html {
   font-family: "Outfit", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(48 45 44 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 p {
   font-size: 16px;
+}
+
+h2 {
+  font-family: "Young Serif", sans-serif;
+  font-weight: 300;
+}
+
+li {
+  padding-left: 1rem;
+}
+
+tr > td:nth-child(1) {
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(95 87 78 / var(--tw-text-opacity));
+}
+
+tr > td:nth-child(2) {
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(133 70 50 / var(--tw-text-opacity));
 }
 
 *, ::before, ::after {
@@ -596,12 +629,25 @@ p {
   }
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .m-4 {
   margin: 1rem;
 }
 
-.m-8 {
-  margin: 2rem;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .ml-2 {
@@ -612,12 +658,28 @@ p {
   margin-left: 1rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .w-\[375px\] {
   width: 375px;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .min-w-\[375px\] {
@@ -628,8 +690,16 @@ p {
   max-width: 1140px;
 }
 
+.border-separate {
+  border-collapse: separate;
+}
+
 .list-inside {
   list-style-position: inside;
+}
+
+.list-decimal {
+  list-style-type: decimal;
 }
 
 .list-disc {
@@ -644,19 +714,60 @@ p {
   justify-content: center;
 }
 
-.bg-Dark-Raspberry {
-  --tw-bg-opacity: 1;
-  background-color: hsl(332 51% 32% / var(--tw-bg-opacity));
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 
 .bg-Rose-White {
   --tw-bg-opacity: 1;
-  background-color: hsl(330 100% 98% / var(--tw-bg-opacity));
+  background-color: rgb(255 245 250 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-Young-Serif {
@@ -668,26 +779,99 @@ p {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
-.text-Nutmeg {
-  --tw-text-opacity: 1;
-  color: hsl(14 45% 36% / var(--tw-text-opacity));
+.font-light {
+  font-weight: 300;
 }
 
-.text-Light-Grey {
-  --tw-text-opacity: 1;
-  color: hsl(30 18% 87% / var(--tw-text-opacity));
+.leading-8 {
+  line-height: 2rem;
 }
 
 .text-Dark-Charcoal {
   --tw-text-opacity: 1;
-  color: hsl(24 5% 18% / var(--tw-text-opacity));
+  color: rgb(48 45 44 / var(--tw-text-opacity));
 }
 
 .text-Dark-Raspberry {
   --tw-text-opacity: 1;
-  color: hsl(332 51% 32% / var(--tw-text-opacity));
+  color: rgb(123 40 79 / var(--tw-text-opacity));
+}
+
+.text-Nutmeg {
+  --tw-text-opacity: 1;
+  color: rgb(133 70 50 / var(--tw-text-opacity));
+}
+
+.marker\:text-Nutmeg *::marker {
+  color: rgb(133 70 50 );
+}
+
+.marker\:text-Nutmeg::marker {
+  color: rgb(133 70 50 );
+}
+
+@media (min-width: 640px) {
+  .sm\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .sm\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .sm\:max-h-1 {
+    max-height: 0.25rem;
+  }
+
+  .sm\:max-h-3 {
+    max-height: 0.75rem;
+  }
+
+  .sm\:max-h-10 {
+    max-height: 2.5rem;
+  }
+
+  .sm\:max-h-4 {
+    max-height: 1rem;
+  }
+
+  .sm\:max-h-40 {
+    max-height: 10rem;
+  }
+
+  .sm\:w-3\/4 {
+    width: 75%;
+  }
+
+  .sm\:rounded-3xl {
+    border-radius: 1.5rem;
+  }
+
+  .sm\:bg-Eggshell {
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 230 216 / var(--tw-bg-opacity));
+  }
+
+  .sm\:p-12 {
+    padding: 3rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }

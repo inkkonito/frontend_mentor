@@ -3,10 +3,22 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply font-Outfit;
+    html {
+        @apply font-Outfit text-Dark-Charcoal text-sm md:text-lg;
     }
     p {
         @apply text-[16px];
+    }
+    h2 {
+        @apply font-Young-Serif font-light;
+    }
+    li {
+        @apply pl-4;
+    }
+    tr > td:nth-child(1) {
+        @apply text-Wenge-Brown font-light;
+    }
+    tr > td:nth-child(2) {
+        @apply font-bold text-Nutmeg pb-2;
     }
 }
